@@ -9,16 +9,14 @@ package javaapplication41;
  *
  * @author Estudiante
  */
-public class Vehiculo {
+public abstract class Vehiculo {
     
         protected int CaballosFuerza;
         public Vehiculo(){
             System.out.println("Constructor paddre");
         }
-        public void Arrancar() {
-            System.out.println("Arranca Padre");
-}
+        public abstract void Arrancar(); // No tiene metodo, sin embargo DEBE existir y ser Modificado en los hijos.
          public void Detener() {
-            System.out.println("Detener Padre");
+            System.out.println("Detener Padre"); // Tiene metodo, y PUEDE O NO SER MODIFICADO en los hijos.
 }
 }
